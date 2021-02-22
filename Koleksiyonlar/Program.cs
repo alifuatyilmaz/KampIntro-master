@@ -18,17 +18,16 @@ namespace Koleksiyonlar
             //Console.WriteLine(isimler[4]);
             //Console.WriteLine(isimler[0]);
 
-            List<string> isimler2 = new List<string> {"Engin","Murat","Kerem","Halil" };
-            Console.WriteLine(isimler2[0]);
+            List<string> isimler2 = new List<string> {"Engin","Murat","Kerem","Halil","Veli" }; //Sınırı belli dizilerde sonradan fazla eleman ekleyemezsin.
+            Console.WriteLine(isimler2[0]);                                                     //List ise sonradan eleman eklemesine izin verir.
             Console.WriteLine(isimler2[1]);
             Console.WriteLine(isimler2[2]);
             Console.WriteLine(isimler2[3]);
-            
             Console.WriteLine(isimler2[4]);
-            Console.WriteLine(isimler2[0]);
-            
-
-
+            isimler2.Add("Ali"); //Listeye Add fonksiyonu ile eleman ekleyebiliriz.
+            Console.WriteLine(isimler2[5]);
+            isimler2.Add("Ahmet");
+            Console.WriteLine(isimler2[6]);
         }
     }
 }

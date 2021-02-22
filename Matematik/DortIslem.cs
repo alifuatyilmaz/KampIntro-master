@@ -12,5 +12,11 @@ namespace Matematik
             int toplam = sayi1 + sayi2;
             Console.WriteLine("Sonuç : " + toplam);
         }
+
+        public void Cikar(int sayi1, int sayi2)
+        {
+            int cikarma = sayi1 - sayi2;
+            Console.WriteLine("Sonuç : " + cikarma);
+        }
     }
 }

@@ -12,12 +12,12 @@ namespace Metotlar
 
             string[] meyveler = new string[] {"Elma","Karpuz" };
 
-            Urun urun1 = new Urun();
+            Urun urun1 = new Urun(); //Urun classına ait urun1 adında bir değişken tanımlıyoruz.Aşağıda Urun classına ait değişkenleri çağırabiliriz.
             urun1.Adi = "Elma";
             urun1.Fiyati = 15;
             urun1.Aciklama = "Amasya elması";
 
-            Urun urun2 = new Urun();
+            Urun urun2 = new Urun();//Urun classına ait urun2 adında bir değişken tanımlıyoruz.Aşağıda Urun classına ait değişkenleri çağırabiliriz.
             urun2.Adi = "Karpuz";
             urun2.Fiyati = 80;
             urun2.Aciklama = "Diyarbakır karpuzu";
@@ -36,9 +36,9 @@ namespace Metotlar
             Console.WriteLine("------------Metotlar---------------");
             //instance - örnek
             //encapsulation
-
-            SepetManager sepetManager = new SepetManager();
-            sepetManager.Ekle(urun1);
+            
+            SepetManager sepetManager = new SepetManager(); 
+            sepetManager.Ekle(urun1); //urun1 'in tüm bilgilerini sepetManager'daki Ekle metotuna gönderiyor.
             sepetManager.Ekle(urun2);
 
             sepetManager.Ekle2("Armut", "Yeşil armut", 12, 10);

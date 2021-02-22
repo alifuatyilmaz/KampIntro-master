@@ -10,7 +10,7 @@ namespace Metotlar
         //syntax
         public void Ekle(Urun urun)
         {
-            Console.WriteLine("Tebrikler. Sepete eklendi : " + urun.Adi);
+            Console.WriteLine("Tebrikler. Sepete eklendi : " + urun.Adi); //sepetManager.Ekle(urun1) ile buraya atılan bilgileri yazdırabiliriz.
         }
 
         public void Ekle2(string urunAdi, string aciklama, double fiyat, int stokAdedi)

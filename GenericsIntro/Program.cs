@@ -7,7 +7,7 @@ namespace GenericsIntro
     {
         static void Main(string[] args)
         {
-            MyList<string> isimler = new MyList<string>();
+            MyList<string> isimler = new MyList<string>(); //MyList classındaki T string tipini alır.
             isimler.Add("Engin");
 
             Console.WriteLine(isimler.Length);

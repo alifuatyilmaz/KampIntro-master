@@ -14,15 +14,17 @@ namespace OOP1
             product1.UnitsInStock = 3;
 
             Product product2 = new Product {Id = 2, CategoryId=5, 
-                UnitsInStock = 5, ProductName="Kalem", UnitPrice= 35};
+                UnitsInStock = 5, ProductName="Kalem", UnitPrice= 35}; //Değişkenleri böylede tanımlayabiliriz.
+
+            Product product3 = new Product {Id = 3, CategoryId = 3, ProductName = "Dolap" , UnitPrice = 50 , UnitsInStock = 10};
 
             //PascalCase   //camelCase
             //case sensitive
             ProductManager productManager = new ProductManager(); 
-            productManager.Add(product1);
+            productManager.Add(product1); //product1'in tüm bilgilerini ProductManager class'ındaki Add metoduna gönderiyor.
             Console.WriteLine(product1.ProductName);
 
-
+            
 
             //int,double,bool... değer tip
             //diziler,class, abstract class, interface ... referans tip
