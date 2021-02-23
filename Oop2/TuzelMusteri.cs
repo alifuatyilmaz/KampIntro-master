@@ -6,7 +6,7 @@ namespace Oop2
 {
     //Coorporate
     //miras inheritance
-    class TuzelMusteri:Musteri
+    class TuzelMusteri:Musteri  //Musteri classından miras alma
     {
         
         public string SirketAdi { get; set; }

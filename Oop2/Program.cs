@@ -26,12 +26,25 @@ namespace Oop2
             //Gerçek Müşteri - Tüzel Müşteri
             //SOLID
 
-            Musteri musteri3 = new GercekMusteri();
-            Musteri musteri4 = new TuzelMusteri();
+            GercekMusteri musteri3 = new GercekMusteri();
+            musteri3.Id = 2;
+            musteri3.MusteriNo = "33333";
+            musteri3.Adi = "Ali";
+            musteri3.Soyadi = "Veli";
+            musteri3.TcNo = "1111111111111";
+
+            //Musteri musteri4 = new TuzelMusteri(); //Böyle tanımlamada sadece Musteri classının değişkenlerini kullanır.
+            TuzelMusteri musteri4 = new TuzelMusteri();
+            musteri4.Id = 4;
+            musteri4.MusteriNo = "66666";
+            musteri4.SirketAdi = "Yıldız";
+            musteri4.VergiNo = "444444444444";
 
             MusteriManager musteriManager = new MusteriManager();
-            musteriManager.Ekle(musteri1);
+            musteriManager.Ekle(musteri1); // musteri hangi classı alıyorsa MusteriManager classında o değerlere göre metodu çağırıyor.
             musteriManager.Ekle(musteri2);
+            musteriManager.Ekle(musteri3);
+            musteriManager.Ekle(musteri4);
 
 
         }
