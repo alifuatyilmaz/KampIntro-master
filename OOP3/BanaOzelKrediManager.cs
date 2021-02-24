@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP3
 {
-    class IhtiyacKrediManager : IKrediManager //IKrediManager'ın yanında bir ampul çıkıyor.Orda implement interface çıkıyor.Tıklayınca aşağıdakiler oluşuyor.
+    class BanaOzelKrediManager : IKrediManager
     {
         public void BiseyYap()
         {
@@ -13,7 +13,7 @@ namespace OOP3
 
         public void Hesapla()
         {
-            Console.WriteLine("İhtiyaç kredisi ödeme planı hesaplandı");
+            Console.WriteLine("Bana özel kredi ödeme planı hesaplandı.");
         }
     }
 }

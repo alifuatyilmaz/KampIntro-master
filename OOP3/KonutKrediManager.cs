@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP3
 {
-    class KonutKrediManager : IKrediManager
+    class KonutKrediManager : IKrediManager //IKrediManager'ın yanında bir ampul çıkıyor.Orda implement interface çıkıyor.Tıklayınca aşağıdakiler oluşuyor.
     {
         public void BiseyYap()
         {
